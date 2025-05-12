@@ -1,0 +1,626 @@
+/* ===================== */
+/* COMMOM CSS */
+body{
+    background: #f1f1f1;
+    font-family: sans-serif,arial,Helvetica;
+}
+
+a,
+a:hover,
+a:focus{
+    text-decoration: none;
+    outline: none;
+}
+.btn:focus,
+button:focus{
+    outline: none;
+}
+
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+h2.page-heading{
+  margin: 5px 0 30px;
+  padding: 0 5px 10px;
+  border-bottom: 2px solid #333;
+}
+
+/* ===================== */
+
+/* ===================== */
+/* ADMIN Panel CSS START */
+/* ===================== */
+
+#wrapper-admin{
+    padding: 60px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+img.logo{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+#header-admin{
+    background-color: #2C3E50;
+    padding: 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#header-admin .admin-logout{
+    color: #ECF0F1;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+#header-admin .admin-logout:hover{
+    color: #E74C3C;
+}
+
+#admin-menubar{
+    background-color: #34495E;
+    padding: 10px 0;
+    border-bottom: 2px solid #BDC3C7;
+}
+
+#admin-menubar .admin-menu{
+    font-size: 0;
+    text-align: center;
+}
+
+#admin-menubar .admin-menu li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#admin-menubar .admin-menu li a{
+    color: #ECF0F1;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#admin-menubar .admin-menu li a:hover{
+    background-color: #E74C3C;
+    color: #fff;
+}
+
+#admin-content{
+    padding: 30px 15px;
+    min-height: 750px;
+    background-color: #ECF0F1;
+}
+
+#admin-content .admin-heading{
+    font-size: 32px;
+    font-weight: 400;
+    color: #2C3E50;
+    margin-bottom: 5px;
+}
+
+#admin-content .add-new{
+    color: #fff;
+    background-color: #2C3E50;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    display: inline-block;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#admin-content .add-new:hover{
+    background-color: #C0392B;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#admin-content .content-table{
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#admin-content .content-table thead{
+    background-color: #34495E;
+    color: #fff;
+}
+
+#admin-content .content-table th,
+#admin-content .content-table td{
+    padding: 15px 20px;
+    border: 1px solid #BDC3C7;
+    text-align: center;
+    font-size: 14px;
+}
+
+#admin-content .content-table th{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#admin-content .content-table tbody{
+    background-color: #fff;
+}
+
+#admin-content .content-table tbody tr:nth-child(even){
+    background-color: #F4F6F7;
+}
+
+#admin-content .content-table tbody tr:hover{
+    background-color: #D5DBDB;
+}
+
+#admin-content .content-table tbody td:nth-child(2){
+    text-align: center;
+}
+
+#admin-content .admin-pagination{
+    text-align: center;
+    margin-top: 30px;
+}
+
+#admin-content .admin-pagination li{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+#admin-content .admin-pagination li a{
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #2C3E50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#admin-content .admin-pagination li a:hover{
+    background-color: #C0392B;
+}
+
+.id, .edit, .delete{
+    text-align: center;
+}
+
+form{
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+form input,
+form select,
+form textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 15px;
+    border: 1px solid #BDC3C7;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form input[type="submit"]{
+    background-color: #E74C3C;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover{
+    background-color: #C0392B;
+}
+
+/* ===================== */
+/* ADMIN Panel CSS END */
+/* ===================== */
+
+
+/* ===================== */
+/* FrontEnd CSS START */
+/* ===================== */
+
+/* Header Styling */
+#header{
+    background: #2C3E50;
+    
+    text-align: center;
+    padding: 15px;
+}
+
+#logo{
+    display: inline-block;
+    width: 65%;
+}
+
+#logo img{
+    width: 100%;
+}
+
+/* Menubar Styling */
+#menu-bar{
+    background-color: #34495E;
+    padding: 10px 0;
+    font-size: 0;
+    text-align: center;
+    border-bottom: 2px solid #BDC3C7;
+}
+
+#menu-bar .menu > li{
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.menu > li > a{
+    color: #ECF0F1;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#menu-bar .menu > li > a:hover,
+#menu-bar .menu > li > a.active{
+    background-color: #E74C3C;
+    color: #fff;
+}
+
+/* Main Content Styling */
+#main-content{
+    padding: 30px 0;
+    min-height: 750px;
+}
+
+#main-content .post-container{
+    background-color: #fff;
+    padding: 25px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+}
+
+#main-content .post-content{
+    border-bottom: 1px solid #d1d1d1;
+    padding: 0 0 30px;
+    margin-bottom:30px;
+}
+
+#main-content .post-content img{
+  width: 100%;
+}
+
+#main-content .post-content .post-img{
+  border: 3px solid #e7e7e7;
+  display: block;
+  height: 145px;
+  overflow: hidden;
+  transition: border .3s;
+}
+#main-content .post-content .post-img:hover{
+  border: 3px solid #E74C3C;
+}
+
+
+#main-content .post-content h3{
+    font-size: 21px;
+    line-height: 28px;
+    font-weight: 600;
+    margin: 0 0 7px;
+
+}
+#main-content .post-content h3 a{
+    color: #2C3E50;
+    transition:all 0.3s;
+}
+#main-content .post-content h3 a:hover{
+    color:#E74C3C;
+}
+
+#main-content .post-content .post-information span{
+    color: #606060;
+    font-size: 12px;
+    text-transform: capitalize;
+    margin: 0 5px 5px 0;
+    display: inline-block;
+}
+
+#main-content .post-content .post-information i{
+    color: #2C3E50;
+    margin-right: 1px;
+}
+
+#main-content .post-content .post-information a{
+    color: #606060;
+    text-decoration: none;
+}
+
+#main-content .post-content .post-information a:hover{
+    color: #E74C3C;
+    text-decoration: none;
+}
+
+#main-content .post-content p,
+#main-content .single-post p{
+    color: #666;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    margin:0 0 10px;
+}
+
+#main-content .post-content a.read-more{
+    color: #fff;
+    background-color: #2C3E50;
+    font-size: 12px;
+    text-transform: capitalize;
+    padding: 3px 8px;
+    border-radius: 2px;
+    transition: all 0.3s;
+}
+
+#main-content .post-content a.read-more:hover{
+    color: #fff;
+    background-color:  #E74C3C;
+}
+
+#main-content .single-post{
+    border: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#main-content .single-post h3{
+    color: #2C3E50;
+}
+
+#main-content .single-post .post-information{
+    margin: 0 0 10px;
+}
+#main-content .single-post p{
+    text-align: justify;
+}
+
+#main-content .single-post img.single-feature-image{
+    width: 70%;
+    margin: 0 auto 20px;
+    display: block;
+    border: 3px solid #e7e7e7;
+}
+
+/* Pagination  Styling */
+.pagination {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pagination li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.pagination li a{
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #2C3E50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination li a:hover,
+.pagination > li > a:focus{
+    color:#fff;
+    background:#E74C3C;
+}
+
+.pagination li.active a {
+    background: #E74C3C !important; 
+    color: #fff !important; 
+    font-weight: bold;
+}
+
+.page_links {
+    background-color: #ccc;
+    font-family: arial, verdana;
+    font-size: 12px;
+    text-decoration: none;
+    border:1px solid #000;
+    padding: 6px;
+    margin: 3px;
+}
+
+#page_a_link{
+    font-size: 12px;
+    border:1px #000000 solid;
+    color:#000;
+    background-color: #cccccc;
+    padding: 6px;
+    margin: 3px;
+    text-decoration: none;
+}
+
+i.fa{
+    color:#222;
+}
+
+/* Sidebar Styling */
+#sidebar h4{
+    color: #1A1A1A;
+    font-size: 17px;
+    line-height: 27px;
+    font-weight:600;
+    text-transform: uppercase;
+    padding: 0 0 0 5px;
+    margin: 0 0 21px;
+    border-left: 3px solid #1e90ff;
+}
+
+#sidebar .search-box-container{
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 0 30px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+}
+
+#sidebar .search-post{
+    padding: 0;
+}
+#sidebar .search-post input{
+    color: #606060;
+}
+#sidebar .search-post input:focus{
+    box-shadow: none;
+    border-color: #999;
+}
+#sidebar .search-post input:hover{
+    border-color: #E74C3C;
+}
+
+#sidebar .search-post .btn{
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 6px 8px;
+    background-color: #2C3E50;
+    border-color: #2C3E50;
+    outline: none;
+}
+
+#sidebar .search-post .btn:hover
+#sidebar .search-post .btn:focus{
+    text-shadow: 0 0 3px #333;
+
+}
+#sidebar .search-post .btn:hover {
+    background-color: #E74C3C;
+    border-color: #999999
+}
+#sidebar .search-post i.fa{
+    font-size: 16px;
+    color: #999999;
+    line-height: 40px;
+    float:right;
+}
+
+#sidebar .recent-post-container{
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.13);
+}
+
+#sidebar .recent-post{
+    border-bottom: 1px solid #e7e7e7;
+    padding: 0 0 15px;
+    margin: 0 0 15px;
+}
+
+#sidebar .recent-post:last-child{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+#sidebar .recent-post .post-img{
+  display: inline-block;
+  width: 33%;
+  border: 3px solid rgba(0,0,0,0.3);
+  vertical-align: top;
+  transition: border .3s;
+}
+
+#sidebar .recent-post .post-img:hover{
+  border: 3px solid  #E74C3C;
+}
+
+#sidebar .recent-post .post-img img{
+    width: 100%;
+}
+
+#sidebar .recent-post .post-content{
+    width: 65%;
+    display: inline-block;
+    border: none;
+    padding: 0 0 0 7px;
+    margin: 0;
+}
+
+#sidebar .recent-post h5{
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 5px;
+}
+#sidebar .recent-post h5 a{
+    color: #1E90FF;
+}
+
+#sidebar .recent-post span{
+    color: #666;
+    font-size: 11px;
+    display: inline-block;
+    margin: 0 5px 10px 0;
+}
+
+#sidebar .recent-post span a{
+    color: #666;
+}
+#sidebar .recent-post span i{
+    color: #1E90FF;
+}
+
+#sidebar .recent-post a.read-more{
+    color: #666;
+    background-color: rgba(0,0,0,0.09);
+    width: 65px;
+    font-size: 11px;
+    text-align: center;
+    padding: 0;
+    display: block;
+    transition: all 0.3s;
+}
+
+#sidebar .recent-post a.read-more:hover{
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+/* Footer Styling */
+#footer{
+    color: #fff;
+    padding:15px 0;
+    text-align:center;
+    background-color:#2C3E50;
+}
+
+#footer  a{
+    color:#fff;
+}
+
+#footer  span  a:hover{
+    text-decoration: underline;
+}
+
+/* ===================== */
+/* FrontEnd CSS END */
+/* ===================== */
